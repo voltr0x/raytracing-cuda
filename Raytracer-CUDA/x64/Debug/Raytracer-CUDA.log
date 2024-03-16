@@ -1,0 +1,12 @@
+﻿  Compiling CUDA source file main.cu...
+  
+  D:\Projects\Raytracer-CUDA\Raytracer-CUDA>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin\nvcc.exe" -gencode=arch=compute_80,code=\"sm_80,compute_80\" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc142.pdb" -o D:\Projects\Raytracer-CUDA\Raytracer-CUDA\x64\Debug\main.cu.obj "D:\Projects\Raytracer-CUDA\Raytracer-CUDA\main.cu" 
+CUDACOMPILE : ptxas warning : Stack size for entry function '_Z6renderP4vec3iiiPP6cameraPP7hitableP17curandStateXORWOW' cannot be statically determined
+CUDACOMPILE : ptxas warning : Stack size for entry function '_Z6renderP4vec3iiiPP6cameraPP7hitableP17curandStateXORWOW' cannot be statically determined
+  main.cu
+  tmpxft_000072fc_00000000-7_main.compute_52.cudafe1.cpp
+D:\Projects\Raytracer-CUDA\Raytracer-CUDA\vec3.h(54): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Projects\Raytracer-CUDA\Raytracer-CUDA\vec3.h(133): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     Creating library D:\Projects\Raytracer-CUDA\x64\Debug\Raytracer-CUDA.lib and object D:\Projects\Raytracer-CUDA\x64\Debug\Raytracer-CUDA.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Raytracer-CUDA.vcxproj -> D:\Projects\Raytracer-CUDA\x64\Debug\Raytracer-CUDA.exe
